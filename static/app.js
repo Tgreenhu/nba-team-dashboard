@@ -75,7 +75,7 @@ function getChart(city_name) {
       type: "scatter",
     };
     let scatterLayout = {
-      title: "Value Over Replacement Player (VORP) vs Usage Percentage (USG%)",
+      title: "VORP vs USG%",
       xaxis: { title: "USG %" },
       yaxis: { title: "VORP" },
     };
@@ -90,7 +90,7 @@ function getChart(city_name) {
       type: "pie",
     };
     let pieLayout = {
-      height: 400,
+      height: 500,
       width: 500,
     };
     let pieData = [trace1];
@@ -100,11 +100,12 @@ function getChart(city_name) {
       y: playerTurnover,
       x: playerUSG,
       text: playerNames,
+      title: "Minutes Distribution",
       mode: "markers",
       type: "scatter",
     };
     let scatterLayout2 = {
-      title: "Turnover Percentage vs Usage Percentage",
+      title: "TO% vs USG%",
       xaxis: { title: "USG %"},
       yaxis: { title: "Turnover %"},
     };
